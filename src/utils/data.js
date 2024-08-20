@@ -14,6 +14,8 @@ export const vegetablesData = [
     image: AppleImg,
     description:
       "A nutrient rich produce, providing fiber, protein, vitamins, and essential minerals.",
+    about:
+      "Grapefruit is a natural cross between pomelo and orange, known for its large fruit size, thick peel, and bitter tinges due to its high content of naringin, limonoids, and furanocoum. It contains vitamin C, provitamin A, carbohydrates, fiber, organic acids, essential amino acids, and fatty acids, as well as secondary metabolites such as limonoids, flavonoids, monoterpens, phytosteols, and polyphenols.",
   },
   {
     id: 2,
@@ -22,6 +24,8 @@ export const vegetablesData = [
     image: GrapeImg,
     description:
       "A nutrient rich produce, providing fiber, protein, vitamins, and essential minerals.",
+    about:
+      "Grapefruit is a natural cross between pomelo and orange, known for its large fruit size, thick peel, and bitter tinges due to its high content of naringin, limonoids, and furanocoum. It contains vitamin C, provitamin A, carbohydrates, fiber, organic acids, essential amino acids, and fatty acids, as well as secondary metabolites such as limonoids, flavonoids, monoterpens, phytosteols, and polyphenols.",
   },
   {
     id: 3,
@@ -30,6 +34,8 @@ export const vegetablesData = [
     image: OnionImg,
     description:
       "A nutrient rich produce, providing fiber, protein, vitamins, and essential minerals.",
+    about:
+      "Grapefruit is a natural cross between pomelo and orange, known for its large fruit size, thick peel, and bitter tinges due to its high content of naringin, limonoids, and furanocoum. It contains vitamin C, provitamin A, carbohydrates, fiber, organic acids, essential amino acids, and fatty acids, as well as secondary metabolites such as limonoids, flavonoids, monoterpens, phytosteols, and polyphenols.",
   },
   {
     id: 4,
@@ -38,6 +44,8 @@ export const vegetablesData = [
     image: BrinjalImg,
     description:
       "A nutrient rich produce, providing fiber, protein, vitamins, and essential minerals.",
+    about:
+      "Grapefruit is a natural cross between pomelo and orange, known for its large fruit size, thick peel, and bitter tinges due to its high content of naringin, limonoids, and furanocoum. It contains vitamin C, provitamin A, carbohydrates, fiber, organic acids, essential amino acids, and fatty acids, as well as secondary metabolites such as limonoids, flavonoids, monoterpens, phytosteols, and polyphenols.",
   },
   {
     id: 5,
@@ -46,6 +54,8 @@ export const vegetablesData = [
     image: CabbageImg,
     description:
       "A nutrient rich produce, providing fiber, protein, vitamins, and essential minerals.",
+    about:
+      "Grapefruit is a natural cross between pomelo and orange, known for its large fruit size, thick peel, and bitter tinges due to its high content of naringin, limonoids, and furanocoum. It contains vitamin C, provitamin A, carbohydrates, fiber, organic acids, essential amino acids, and fatty acids, as well as secondary metabolites such as limonoids, flavonoids, monoterpens, phytosteols, and polyphenols.",
   },
   {
     id: 6,
@@ -54,6 +64,8 @@ export const vegetablesData = [
     image: TomatoImg,
     description:
       "A nutrient rich produce, providing fiber, protein, vitamins, and essential minerals.",
+    about:
+      "Grapefruit is a natural cross between pomelo and orange, known for its large fruit size, thick peel, and bitter tinges due to its high content of naringin, limonoids, and furanocoum. It contains vitamin C, provitamin A, carbohydrates, fiber, organic acids, essential amino acids, and fatty acids, as well as secondary metabolites such as limonoids, flavonoids, monoterpens, phytosteols, and polyphenols.",
   },
   {
     id: 7,
@@ -62,5 +74,7 @@ export const vegetablesData = [
     image: PeasImg,
     description:
       "A nutrient rich produce, providing fiber, protein, vitamins, and essential minerals.",
+    about:
+      "Grapefruit is a natural cross between pomelo and orange, known for its large fruit size, thick peel, and bitter tinges due to its high content of naringin, limonoids, and furanocoum. It contains vitamin C, provitamin A, carbohydrates, fiber, organic acids, essential amino acids, and fatty acids, as well as secondary metabolites such as limonoids, flavonoids, monoterpens, phytosteols, and polyphenols.",
   },
 ];
