@@ -2,15 +2,44 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import { vegetablesData } from "../utils/data";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart, removeFromCart, updateQuantity } from "../Redux/cartSlice";
 
 const ProductDetailsPage = () => {
   const { id } = useParams();
+  const dispatch = useDispatch();
 
-  const productData = vegetablesData.filter(
-    (item) => item.id.toString() === id
-  );
+  const productData = vegetablesData.find((item) => item.id === parseInt(id));
+  const { name, price, description, about, image } = productData;
 
-  const { name, price, description, about, image } = productData[0];
+  const cart = useSelector((state) => state.cart.items);
+  const cartItem = cart.find((item) => item.id === parseInt(id));
+
+  const handleAdd = () => {
+    dispatch(addToCart({ ...productData, quantity: 1 }));
+  };
+
+  const handleUpdate = () => {
+    dispatch(
+      updateQuantity({
+        id: productData.id,
+        quantity: cartItem.quantity + 1,
+      })
+    );
+  };
+
+  const handleRemove = () => {
+    if (cartItem.quantity > 1) {
+      dispatch(
+        updateQuantity({
+          id: productData.id,
+          quantity: cartItem.quantity - 1,
+        })
+      );
+    } else {
+      dispatch(removeFromCart({ id: productData.id }));
+    }
+  };
 
   return (
     <>
@@ -34,9 +63,32 @@ const ProductDetailsPage = () => {
                   <span>1kg</span>
                   <span>₹{price}</span>
                 </div>
-                <button className="h-8 bg-yellow-400 hover:bg-yellow-700 py-1 px-4 rounded-xl">
-                  Add +
-                </button>
+                <div className="flex items-center gap-2">
+                  {cartItem ? (
+                    <>
+                      <button
+                        onClick={() => handleRemove()}
+                        className="h-8 bg-red-400 hover:bg-red-700 py-1 px-3 rounded-xl"
+                      >
+                        -
+                      </button>
+                      <span>{cartItem.quantity}</span>
+                      <button
+                        onClick={() => handleUpdate()}
+                        className="h-8 bg-yellow-400 hover:bg-yellow-700 py-1 px-3 rounded-xl"
+                      >
+                        +
+                      </button>
+                    </>
+                  ) : (
+                    <button
+                      onClick={() => handleAdd()}
+                      className="h-8 bg-yellow-400 hover:bg-yellow-700 py-1 px-4 rounded-xl"
+                    >
+                      Add +
+                    </button>
+                  )}
+                </div>
               </div>
 
               <div className="flex flex-col gap-2 border rounded-lg p-2">
