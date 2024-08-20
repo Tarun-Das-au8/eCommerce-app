@@ -7,7 +7,7 @@ const Homepage = () => {
   return (
     <>
       <div className="min-h-screen relative flex flex-col">
-        <div className="absolute top-0 left-0 w-3/5 h-full bg-yellow-400"></div>
+        <div className="absolute top-0 left-0 w-full md:w-3/5 h-full bg-yellow-400"></div>
         <Navbar />
         <HeroSection />
       </div>

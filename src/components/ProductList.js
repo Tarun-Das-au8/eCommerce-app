@@ -37,12 +37,12 @@ const ProductList = ({ data }) => {
 
   return (
     <Link to={`/product/${data.id}`}>
-      <div className="w-72 h-[28rem] flex flex-col gap-2 border border-gray-300 rounded-lg shadow-lg overflow-hidden">
-        <div className="relative w-full h-[14rem]">
+      <div className="w-72 h-[25rem] md:h-[28rem] flex flex-col gap-2 border border-gray-300 rounded-lg shadow-lg overflow-hidden">
+        <div className="relative w-full h-[10rem] md:h-[14rem]">
           <img
             src={data.image}
             alt={`${data.name}-image`}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain md:object-cover"
           />
         </div>
         <div className="p-4">
@@ -64,7 +64,7 @@ const ProductList = ({ data }) => {
                       e.preventDefault();
                       handleRemove();
                     }}
-                    className="h-8 bg-red-400 hover:bg-red-700 py-1 px-3 rounded-xl"
+                    className="h-8 bg-yellow-400 hover:bg-yellow-700 py-1 px-3 rounded-xl"
                   >
                     -
                   </button>
